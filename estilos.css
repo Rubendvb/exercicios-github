@@ -1,0 +1,44 @@
+body {
+	
+    background-image: url("ini2_2.gif");
+	background-size: 1400px 750px;
+	background-repeat: no-repeat;
+}
+
+iframe{
+	width: 80%;
+	height: 100vh;
+}
+
+.aulaInput {
+	flex: 1;
+	height: 32px;
+	padding: 0 20px;
+	opacity: 0.5;
+
+	
+	bottom: 0;
+	color: #000;
+	font-size: 18px;
+	border-radius: 25px;
+  }
+
+  .searchButton {
+	width: 150px;
+	height: 42px;
+	padding: 10px;
+	margin-left: 15px;
+	background-color:  #00ffff;
+	color: #000;
+	border: 0;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 25px;
+	cursor: pointer;
+  }
+
+  .title {
+	font-weight: 800;
+  
+  }
+  
