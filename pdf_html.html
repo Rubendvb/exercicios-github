@@ -3,7 +3,7 @@
   <head>
     <meta chaset="utf-8" />
     <title>Curso Git</title>
-    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="/src/css/estilos.css" />
   </head>
   <body>
     <form>
@@ -26,37 +26,6 @@
       <div id="contenido"></div>
     </header>
 
-    <script type="text/javascript">
-      var Aulas = [
-        "anima.gif",
-        "VC_Git_Aula01.pdf",
-        "VC_Git_Aula02.pdf",
-        "VC_Git_Aula03.pdf",
-        "VC_Git_Aula04.pdf",
-        "VC_Git_Aula05.pdf",
-        "VC_Git_Aula06.pdf",
-        "VC_Git_Aula07.pdf",
-        "VC_Git_Aula08.pdf",
-        "VC_Git_Aula09.pdf",
-        "prof.jpg",
-        "Danigoogle.png",
-        "coverVideo.mp4",
-      ];
-
-      function buscarAL() {
-        contenido.innerHTML = " ";
-
-        var aula = document.getElementById("aula");
-        if (aula.value <= 0 || aula.value > 12) {
-          aula.value = 0;
-        }
-
-        contenido.innerHTML += `<center>
-							   	   <iframe src=${
-                       Aulas[aula.value]
-                     } target='_blank' rel='noreferrer'></iframe>
-							       </center>`;
-      }
-    </script>
+    <script src="/src/js/script.js" type="text/javascript"></script>
   </body>
 </html>
