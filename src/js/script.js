@@ -15,16 +15,22 @@ var Aulas = [
 ];
 
 function buscarAL() {
-  contenido.innerHTML = " ";
+  conteudo.innerHTML = " ";
 
   var aula = document.getElementById("aula");
   if (aula.value <= 0 || aula.value > 12) {
     aula.value = 0;
   }
 
-  contenido.innerHTML += `<center>
-							   	   <iframe src=${
-                       Aulas[aula.value]
-                     } target='_blank' rel='noreferrer'></iframe>
-							       </center>`;
+  conteudo.innerHTML += `${
+    aula.value == 0
+      ? `<iframe class="imgIframe" src=${
+          Aulas[aula.value]
+        } target='_blank' rel='noreferrer'></iframe>
+  </div>`
+      : `<iframe class="imgIframe" src=${
+          Aulas[aula.value]
+        } target='_blank' rel='noreferrer'></iframe>
+  </div>`
+  }`;
 }
